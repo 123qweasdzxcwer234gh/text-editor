@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>text editor</title>
+</head>
+<body>
+<h1 id="h1">text editor program</h1>
+<p id="p1">this program is desinged for making html text documents like this one.</p>
+<h1 id="h2"></h1>
+<p id="p2"></p>
+<h1 id="h3"></h1>
+<p id="p3"></p>
+<h1 id="h4"></h1>
+<p id="p4"></p>
+<h1 id="h5"></h1>
+<p id="p5"></p>
+<h1 id="h6"></h1>
+<p id="p6"></p>
+<h1 id="h7"></h1>
+<p id="p7"></p>
+<h1 id="h8"></h1>
+<p id="p8"></p>
+<h1 id="h9"></h1>
+<p id="p9"></p>
+<h1 id="h10"></h1>
+<p id="p10"></p>
+
+
+<script>
+var textvalue = 0
+var textvalue1 = 0
+function style1(color, element, text1) {  
+  document.getElementById(element).style.color = color;
+  document.getElementById(element).innerHTML = text1;
+}
+var x = 0
+var y = 0
+var z = 0
+var w = 0
+var ab = 0
+function clickMe() {
+  x = prompt("color:");
+  y = prompt("element:");
+  z = prompt("text:");
+}
+</script>
+
+<button onclick="style1(x, y, z)">
+RUN
+</button>
+<button onclick="clickMe()">
+NEW LINE
+</button>
+<button onclick="ab = prompt('element:'); style1('white', ab, '')">
+CLEAR
+</button>
+<button onclick="alert('you can reach me at github.com/123qweasdzxcwer234gh')">
+CONTACT ME
+</button>
+<button id="button" onclick="document.getElementById('h1').innerHTML = ''; document.getElementById('p1').innerHTML = ''; document.getElementById('button').style.display = 'none';">
+CLEAR EXAMPLE
+</button>
+</body>
+</html>
