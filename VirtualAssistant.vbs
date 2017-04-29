@@ -52,7 +52,7 @@ ElseIf X = "close a program" Then
    Next
 ElseIf X = "open cb." Then
    shell.run "CB.bat"
-ElseIf X = "open file explorer" Then
+ElseIf X = "open explorer" Then
    shell.run "explorer.exe"
 Else
    Sapi.speak "try something difrent next time"
