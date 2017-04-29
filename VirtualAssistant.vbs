@@ -14,8 +14,8 @@ ElseIf X = "open calc." Then
 Elseif X = "go fly a kite" Then
     Sapi.Speak "What??"
 Elseif X = "shut down my computer" Then
-   Sapi.speak "i can't exactly do that, but i can open slidetoshutdown.exe"
-   shell.run "SlideToShutDown.exe"
+         Sapi.speak "save your work!"
+         shell.run "shutdown.exe -s -t 60"
 Elseif X = "open a program" Then
    Sapi.speak "what program do you want me to open"
    Y=InputBox("","","")
